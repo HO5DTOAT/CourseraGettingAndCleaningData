@@ -23,3 +23,14 @@ As the organization of files in the *test* and *train* directories is similar, a
 3. Read the sensor data from the file *X_\<sub-directory\>.txt* using descriptions in **feature_names** as the column headings.
 4. Use the contents of **required_features** to extract the columns that are required.
 5. Combine the contents of the three data sets into a single data frame and return the result.
+
+# The variables of the data
+The variables of the data frames created by the script are as follows:
+1. subject: The ID of the subject (numeric).
+2. activity: The activity being performed (character).
+3. The other variables are numeric and correspond to variables in the input data with the following changes to the name
+	1. Brackets have been removed.
+	2. Dashes have been replaced with underscore.
+	3. Name converted to lowercase.
+	4. *_mean*  in the name indicates that mean value of the readings is present and and *_std* indicates that value is standard deviation of the readings.
+4. In the aggregated dataset created for the assignment, the prefix *mean_* is used to indicate that the variable holds the mean value of the readings.
