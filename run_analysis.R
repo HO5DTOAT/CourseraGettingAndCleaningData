@@ -90,7 +90,7 @@ colnames(means_of_merged_data)[3:length(colnames(means_of_merged_data))] <-
   )
 
 # 03. Write the averages data set to file.
-write.table(means_of_merged_data, file = "final_data.txt", col.names = FALSE)
+write.table(means_of_merged_data, file = "final_data.txt", row.names = FALSE)
 
 # 04. Remove unwanted data.
 rm(read_data,
