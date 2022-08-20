@@ -36,7 +36,7 @@ read_data <- function(subfolder) {
   subjects <-
     read.fwf(
       paste0("data/", subfolder, "/subject_", subfolder, ".txt"),
-      widths = 1,
+      widths = 2,
       col.names = c("subject")
     )
   
